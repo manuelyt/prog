@@ -93,6 +93,8 @@ curl -X PUT     http://127.0.0.1:8080/books/3    -d '{   "book_name": "ratas3", 
  
 pero consiguo que funcione en power shell : 
  
+ 
+``` 
 PS C:\Users\manue>
 PS C:\Users\manue> $book = @{
 >>     book_name='ratas4a'
@@ -111,6 +113,8 @@ son'
 id book_name author_name isbn
 -- --------- ----------- ----
  3 ratas4a   camus       vkdej9282
+´´´
+ 
  
   
  
