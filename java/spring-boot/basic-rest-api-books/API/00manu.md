@@ -8,9 +8,9 @@ este proyecto me lo hice siguiendo esta guia :
 
 https://www.freecodecamp.org/news/how-to-build-a-rest-api-with-spring-boot-using-mysql-and-jpa-f931e348734b/
 How to build a Rest API with Spring Boot using MySQL and JPA
- __
- __
- __
+<br/>
+<br/>
+<br/>
   
  
   
