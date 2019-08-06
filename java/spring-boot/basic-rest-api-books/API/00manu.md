@@ -8,9 +8,7 @@ este proyecto me lo hice siguiendo esta guia :
 
 https://www.freecodecamp.org/news/how-to-build-a-rest-api-with-spring-boot-using-mysql-and-jpa-f931e348734b/
 How to build a Rest API with Spring Boot using MySQL and JPA
-<br/>
-<br/>
-<br/>
+<br/><br/><br/>
   
  
   
@@ -53,9 +51,7 @@ CREATE TABLE books ( id INT UNSIGNED AUTO_INCREMENT PRIMARY KEY , book_name TEXT
   
  
   
-__
-__
-__
+<br/><br/><br/>
  
 siguiente error :
  
@@ -76,9 +72,7 @@ SET GLOBAL time_zone = '+1:00';
  
   
  
-__
-__
-__
+<br/><br/><br/>
 y por fin funciona la aplicacion
  
 ```
