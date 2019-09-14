@@ -20,7 +20,15 @@
 			<artifactId>commons-math3</artifactId>
 			<version>3.6.1</version>
 		</dependency>
-
+		
+		<dependency>
+			<groupId>ch.obermuhlner</groupId>
+			<artifactId>big-math</artifactId>
+			<version>2.2.0</version>
+		</dependency>
+		
+		
+		
 	</dependencies>
 
 </project>

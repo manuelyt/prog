@@ -1,6 +1,6 @@
 # que hice en este proyectito
 
-### problema
+### problema articulo numeros periodicos
 
 me lei este articulito
 
@@ -33,4 +33,12 @@ para ver las divisiones con mucha precision tuve que usar la clase bigfraction d
 			<artifactId>commons-math3</artifactId>
 
 bye
-			
+
+por el camino estuvi mirando tambien la api de google de guava
+
+https://guava.dev/
+
+pero la de apache parece bastante mas completa y potente, tiene muchos sub paquetes : analysis, geometry, neuralnet, optimization, stat
+
+https://commons.apache.org/proper/commons-math/javadocs/api-3.4/org/apache/commons/math3/package-use.html
+
