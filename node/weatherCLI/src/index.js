@@ -1,10 +1,7 @@
 
 /*
 
-http://www.theprojectspot.com/tutorial-post/Node-js-for-beginners-part-1-hello-world/2
-
 */
-
 
 'use strict'
 
