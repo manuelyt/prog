@@ -1,5 +1,7 @@
 # prog - node
 
+<br>
+
 
 
 ## hellow-server
@@ -8,6 +10,8 @@ servidor web hola mundo :
 
 http://www.theprojectspot.com/tutorial-post/Node-js-for-beginners-part-1-hello-world/2
 
+
+<br>
 
 ## weather-cli
 
@@ -20,6 +24,8 @@ y te da 2 cosas, el tiempo, y predicciones
 no funcionaba, tuve que currarmelo un poco, pero fue facil, porque estaba bien documentado
 
 tuve que cambiar la url, y algunos parametros, mire la documentacion de la api de weatherstack para corregir el codigo y que funcionase
+
+<br>
 
 https://pusher.com/tutorials/node-command-line-app
 
