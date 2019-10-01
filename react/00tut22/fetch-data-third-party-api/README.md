@@ -17,12 +17,15 @@ C:\manu\git\prog\react\00tut22\fetch-data-third-party-api>npm start
 programa o archivo por lotes ejecutable.
 ```
 
-asi que tuve que mirarlo ( grrrrr )
+<br>
+
+asi que tuve que mirarlo ( grrrrr ) 
 
 pero fue facil y rapido :
 
-
+```
 npm install -save react react-dom
+```
 
 haciendo esto ya funcionaba el codigo del tutorial
 
