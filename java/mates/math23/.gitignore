@@ -32,5 +32,5 @@ build/
 
 ### eclipse ###
 /bin/
-/classes/
+/target/classes/
 
