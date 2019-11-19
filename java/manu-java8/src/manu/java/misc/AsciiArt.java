@@ -10,7 +10,6 @@ import java.awt.image.BufferedImage;
 /*
  * 
  * https://www.baeldung.com/ascii-art-in-java
- * 
  * https://github.com/eugenp/tutorials/blob/master/core-java-modules/core-java/src/main/java/com/baeldung/asciiart/AsciiArt.java
  * 
  */
