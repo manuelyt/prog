@@ -29,10 +29,10 @@ public class AsciiArt {
 	}
 
 	public void run() {
-		Font fo22 = new Font(font4, 0, size);
+		Font fo22 = new Font(font0, 0, size);
 		Settings set22 = new Settings(fo22, size * str.length() * 2 / 3, size * 3 / 2);
 
-		drawString(str, "#", set22);
+		drawString(str2, "#", set22);
 //		drawString(str2, "#", set22);
 	}
 
