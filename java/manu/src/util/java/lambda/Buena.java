@@ -21,23 +21,23 @@ public class Buena {
 	public static String getTrazaPilaHiloStringV2(Thread hilo) {
 		String ret = "";
 		try {
-			if (hilo != null) {
-				FuncInterface fobj = (Stream<StackTraceElement> x) -> x.iterator();
-				Iterator<StackTraceElement> kkll23 = fobj.abstractFun(Arrays.asList(hilo.getStackTrace()).stream());
-				while (kkll23.hasNext()) {
-					StackTraceElement kkll24 = kkll23.next();
-					ret += kkll24.getModuleName() + "/" + kkll24.getClassName() + "." + kkll24.getMethodName() + "("
-							+ kkll24.getFileName() + ":" + kkll24.getLineNumber() + ")\n\t";
-				}
-				System.out.println(ret);
-				List<StackTraceElement> lh = Arrays.asList(hilo.getStackTrace());
-				for (StackTraceElement olh : lh) {
-					ret += olh.getModuleName() + "/" + olh.getClassName() + "." + olh.getMethodName() + "("
-							+ olh.getFileName() + ":" + olh.getLineNumber() + ")\n\t";
-				}
-				return Arrays.asList(hilo.getStackTrace()).stream().map(s -> s.toString())
-						.collect(Collectors.joining("\n\t"));
-			}
+//			if (hilo != null) {
+//				FuncInterface fobj = (Stream<StackTraceElement> x) -> x.iterator();
+//				Iterator<StackTraceElement> kkll23 = fobj.abstractFun(Arrays.asList(hilo.getStackTrace()).stream());
+//				while (kkll23.hasNext()) {
+//					StackTraceElement kkll24 = kkll23.next();
+//					ret += kkll24.getModuleName() + "/" + kkll24.getClassName() + "." + kkll24.getMethodName() + "("
+//							+ kkll24.getFileName() + ":" + kkll24.getLineNumber() + ")\n\t";
+//				}
+//				System.out.println(ret);
+//				List<StackTraceElement> lh = Arrays.asList(hilo.getStackTrace());
+//				for (StackTraceElement olh : lh) {
+//					ret += olh.getModuleName() + "/" + olh.getClassName() + "." + olh.getMethodName() + "("
+//							+ olh.getFileName() + ":" + olh.getLineNumber() + ")\n\t";
+//				}
+//				return Arrays.asList(hilo.getStackTrace()).stream().map(s -> s.toString())
+//						.collect(Collectors.joining("\n\t"));
+//			}
 		} catch (Exception e) {
 			System.out.println("error - excep");
 			e.printStackTrace();
