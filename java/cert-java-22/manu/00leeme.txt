@@ -1,0 +1,90 @@
+ 
+ 
+ 
+me puse a mirar este libro de certificacion de java :
+ 
+ 
+Oracle Certified Professional Java SE 8 Programmer Exam 1Z0-809- A Comprehensive OCPJP 8 Certification Guide (2016,-496).pdf
+ 
+ganesh 
+hari kiran 
+tushar sharma
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+________________________________________
+ 
+________________________________________
+ 
+ - java - examenes - certificacion - 
+ 
+  
+ 
+todos duran 2 horas y media
+alrededor de 80 preguntas
+hay que acertar el 65 % ( los errores no cuentan negativamente )
+cuesta alrededor de 250 eur
+ 
+  
+ 
+Exam Number     1Z0-808                  1Z0-809                      1Z0-810                   1Z0-813
+                                                                                         
+Expertise       Beginner                 Intermediate                 Intermediate              Intermediate
+Level                                                                                    
+                                                                                         
+Exam Name       Java SE 8                Java SE 8 Programmer         Upgrade Java SE 7         Upgrade to Java SE 8                                 
+                Programmer I             II                           to Java SE 8 OCP          OCP (Java SE 6 and
+                                                                      Programmer                all prior versions)
+ 
+Associated      Oracle Certified         Oracle Certified             Oracle Certified          Oracle Certified                                                           
+Certification   Associate, Java SE 8     Professional, Java SE 8      Professional, Java        Professional, Java
+(abbreviation)  Programmer               Programmer (OCPJP 8)         SE 8 Programmer           SE 8 Programmer
+                (OCAJP 8)                                             (upgrade)(OCPJP 8)        (OCPJP 8)
+ 
+exam            Java Basics              Java Class Design            Lambda                    Language 
+topics          Working With Java        Advanced Java Class          Expressions               Enhancements
+                Data Types               Design                       Using Built-in            Concurrency
+                Using Operators and      Generics and                 Lambda Types              Localization
+                Decision Constructs      Collections                  Filtering Collections     Java File I/O
+                Creating and Using       Lambda Built-in              with Lambdas              (NIO.2)
+                Arrays                   Functional Interfaces        Collection                Lambda
+                Using Loop               Java Stream API              Operations with           Java Collections
+                Constructs               Exceptions and               Lambda                    Java Streams
+                Working with             Assertions                   Parallel Streams
+                Methods and              Use Java SE 8 Date/          Lambda Cookbook
+                Encapsulation            Time API                     Method
+                Working with             Java I/O Fundamentals        Enhancements
+                Inheritance              Java File I/O (NIO.2)        Use Java SE 8 Date/
+                Handling Exceptions      Java Concurrency             Time API
+                Working with             Building Database
+                Selected classes         Applications with JDBC
+                from the Java API        Localization
+________________________________________
+ 
+________________________________________
+ 
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
