@@ -1,5 +1,6 @@
 package manu.java.cert;
 
+import java.nio.file.Paths;
 import java.time.LocalDate;
 import java.time.Month;
 import java.util.Calendar;
@@ -7,7 +8,7 @@ import java.util.Calendar;
 public class _c {
 	private static int $;
 
-	public static void main(String[] main) {
+	public static void main(String... main) {
 		// 1
 		String a_b;
 		System.out.println($);
@@ -23,7 +24,6 @@ public class _c {
 		System.out.println(sb1.toString() == s1);
 		System.out.println(sb1.toString().equals(s1));
 
-		
 		// 8
 		System.out.println(LocalDate.of(2015, Calendar.APRIL, 1));
 		System.out.println(LocalDate.of(2015, Month.APRIL, 1));
@@ -31,6 +31,24 @@ public class _c {
 		System.out.println(LocalDate.of(2015, 4, 1));
 //		System.out.println(new LocalDate(2015, 3, 1));
 //		System.out.println(new LocalDate(2015, 4, 1));
+
+		//
+		//
+		//
+		//
+		//
+
+		// /* dog */
+		/* elephant */
+		/*
+		 * /* ferret
+		 */
+//		*/
+
+		// pg 41
+		Paths.get("name");
+
+		System.out.println(Paths.get("name"));
 
 	}
 }
