@@ -2,7 +2,7 @@
 
 
 <br>me lo cree con:
-<br>react-native init manu22
+<br>react-native init manu25
 <br>
 <br>para arrancarlo : 
 <br>react-native run-android
