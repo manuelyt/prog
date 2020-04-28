@@ -19,8 +19,13 @@ public class QuitarSaltoLinea {
 	 * txt aparecen los saltos de linea innecesarios. Usando este programita, se
 	 * eliminan esos saltos de linea.
 	 * 
+	 * 
+	 * 
 	 * Esta hecho para ficheros utf-8, asi que antes de usarlo mejor convertilo a
 	 * utf-8 ( usando el notepad++ por ejemplo ).
+	 * 
+	 * tiene un inconveniente : no se puede diferenciar un punto y aparte de un
+	 * punto y seguido si este va en el margen de posiciones en las que yo los quito
 	 */
 	public static void main(String[] args) {
 		String nficheror1 = "c:\\manu\\00basura\\1.txt";
@@ -41,7 +46,7 @@ public class QuitarSaltoLinea {
 				if (longi > 3)
 					chars = linea.substring(longi - 2, longi);
 				if (chars.equals(".") || chars.equals(". ")) {
-				} else if (longi > 50 & longi < 85)
+				} else if (longi > 65 & longi < 125)
 					salto = true;
 				if (salto)
 					pw.print(linea + " ");
