@@ -1,0 +1,10 @@
+<module>
+    <inherits name="com.google.gwt.user.User"/>
+    <entry-point class="me.client.App"/>
+    <inherits name="com.intendia.rxgwt2.RxElemento"/>
+    <inherits name="org.jboss.gwt.elemento.Core"/>
+    <!-- Inherit the default GWT style sheet.                       -->
+    <inherits name = 'com.google.gwt.user.theme.clean.Clean'/>
+    <!--<source path="client"/>-->
+    <!--<public path="public"/>-->
+</module>

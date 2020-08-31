@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.jboss.gwt.elemento:elemento-core:0.9.1-gwt2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/gwt/elemento/elemento-core/0.9.1-gwt2/elemento-core-0.9.1-gwt2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/gwt/elemento/elemento-core/0.9.1-gwt2/elemento-core-0.9.1-gwt2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/org/jboss/gwt/elemento/elemento-core/0.9.1-gwt2/elemento-core-0.9.1-gwt2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>
