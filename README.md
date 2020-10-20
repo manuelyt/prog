@@ -3,6 +3,12 @@
 mis mierda proyectitos, para no perder las cosas que voy haciendo
 
 
+## angular
+
+## gwt
+
+## html
+
 ## java
 
 ### manu
@@ -18,3 +24,5 @@ mis utilidades y rutinitas ( ficheros duplicados, QuitarPorcentajeUrl y QuitarSa
 ## node
 
 ## react
+
+## reactn
