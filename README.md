@@ -15,6 +15,8 @@ mis mierda proyectitos, para no perder las cosas que voy haciendo
 
 mis utilidades y rutinitas ( ficheros duplicados, QuitarPorcentajeUrl y QuitarSaltoLinea )
 
+es un proyecto intelli j
+
 ### mates
 
 ( el mismo nombre lo dice )
