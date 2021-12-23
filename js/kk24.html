@@ -1,0 +1,128 @@
+<style>
+</style>
+<br>
+<label for="fname">Columnas:</label>
+<input type="text" id="columnas" name="columnas" size="5"><br><br>
+<br>
+<label for="fichero">Selecciona el fichero:</label>
+<input type="file" id="file-input" />
+<br>
+<label for="fichero">guardar:</label>
+<input type="button" id="guardar" />
+<br>
+<h3>Contenido del archivo:</h3>
+<pre id="contenido-archivo"></pre>
+<script>
+
+
+
+
+/*
+.
+.
+.
+.
+.
+*/
+
+
+
+
+
+function errorHandler() {
+  console.log('Error!', arguments);
+}
+
+function onInitFs(fs) {
+
+  // Creamos el archivo el el filesystem
+  fs.root.getFile('log.txt', { create: true }, function(fileEntry) {
+
+    // fileEntry es el puntero a archivo log.txt.
+    fileEntry.createWriter(function(fileWriter) {
+
+      fileWriter.onwriteend = function(e) {
+          console.log('Escritura completada!.');
+      };
+
+      fileWriter.onerror = function(e) {
+          console.log('Escritura fallida: ' + e.toString());
+      };
+
+      // Creamos un Bolb y lo escribimos en log.txt.
+      var blob = new Blob(['Hola mundo!'], { type: 'text/plain' });
+      fileWriter.write(blob);
+      
+    }, errorHandler);
+  }, errorHandler);
+}
+
+function guardar22() {
+//
+navigator.persistentStorage = navigator.persistentStorage || navigator.webkitPersistentStorage;
+window.requestFileSystem= window.requestFileSystem|| window.webkitRequestFileSystem;
+
+navigator.persistentStorage.requestQuota(1024 * 1024, function(grantedBytes) {
+
+  // Tras recibir permisos para almacenar archivos
+  // nunca mas deberías invocar "requestQuota"
+
+  // A continuación debes solicitar un punto al fileSystem
+  window.requestFileSystem(PERSISTENT, grantedBytes, onInitFs, errorHandler);
+}, function(e) {
+    console.log('Error', e);
+});
+
+}
+
+
+/*
+.
+.
+.
+.
+.
+*/
+
+
+
+
+
+function leerArchivo(e) {
+    var archivo = e.target.files[0];
+    if (!archivo) {
+        return;
+    }
+    var lector = new FileReader();
+    lector.onload = function(e) {
+        var contenido = e.target.result;
+        mostrarContenido(contenido);
+    };
+    lector.readAsText(archivo);
+}
+
+function mostrarContenido(contenido) {
+    var elemento = document.getElementById('contenido-archivo');
+    elemento.innerHTML = contenido;
+}
+
+document.getElementById('file-input')
+    .addEventListener('change', leerArchivo, false);
+
+
+
+
+
+/*
+.
+.
+.
+.
+.
+*/
+
+
+document.getElementById('guardar')
+    .addEventListener('change', guardar22, false);
+
+</script>

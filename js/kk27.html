@@ -1,0 +1,223 @@
+<style>
+</style>
+<br>
+<h3>Quitar saltos de linea</h3>
+
+<p>_______________________</p>
+<p>
+Este programa lo hice para quitar los saltos de linea de los ficheros de
+texto.
+<br><br>
+Por ejemplo, cuando se copia un fichero pdf a txt, al copiarlo, en el texto
+txt aparecen saltos de linea innecesarios.
+<br><br>
+En los margenes de columnas que se concreten se eliminan todos 
+los saltos de linea ( salvo que la linea acabe en punto ).
+<br><br>
+Inconveniente : no se puede diferenciar un punto y aparte de un
+punto y seguido ( siempre supongo que es un punto y aparte, y mantengo el salto de linea ).
+<br>
+</p>
+
+<p>_______________________</p><br>
+
+<label for="fname">Columnas min:</label>
+<input type="text" name="colmin" id="colmin" size="5" value="40" >
+&nbsp; &nbsp; &nbsp; 
+<label for="fname">Columnas max:</label>
+<input type="text"  name="colmax" id="colmax" size="5" value="80">
+<br><br>
+<!--
+<input type="file" id="file-input" style=" width: 500px; "  />
+-->
+<input type="file" id="file-input"  />
+<br>
+<br>
+<input  style="height: 20px; width: 100px; left: 250; top: 250;" type="button" id="guardar" onclick="guardar22()" value="procesar"/>
+<br>
+<p>_______________________</p><br>
+
+<h3>Fichero de entrada</h3>
+<p>_______________________</p><br>
+
+<pre id="contenido-archivoa" > --- vacio --- </pre>
+<br><p>_______________________</p>
+
+<br><br><br>
+<h3>Fichero de salida</h3>
+<p>_______________________</p><br>
+ 
+<pre id="contenido-archivob" > --- vacio --- </pre>
+<br><p>_______________________</p>
+
+<pre id="contenido-archivo" style=" height: 1px; width: 1px; visibility: hidden;"> --- vacio --- </pre>
+
+<br><br><br>
+
+
+<script>
+
+/*
+.
+.
+.
+.
+.
+*/
+
+function guardar22() {
+
+    var elementoDom = document.getElementById('contenido-archivo');
+    var contenido = elementoDom.innerHTML ;
+
+    var contenidoBlob = new Blob([contenido], { type: 'text/plain' });
+    var ficheroTxt = document.createElement('a');
+
+    var reader = new FileReader();
+    reader.onload = function() {
+    //    alert(reader.result);
+    }
+    reader.readAsText(contenidoBlob);
+    var contenidoBlobS = reader.toString();
+    var contsize = contenido.length;
+
+    var colmin = document.getElementById("colmin").value;
+    var colmax = document.getElementById("colmax").value;
+
+    var contenido2 = "";
+    var linea = "";
+    for (let i = 0, n = contenido.length; i < n; ++i) {
+        var charFich = contenido.substring(i,i+1);
+        if ( charFich !="\n") {
+            linea += charFich;
+        }
+        else {
+            var linl = linea.length;
+            var lastc = "";
+            var lastc2 = "";
+            var salto = false;
+            if ( linl > 3) {
+                lastc = linea.substring(linl-1,linl);
+                lastc2 = linea.substring(linl-2,linl);
+            }
+            if ( lastc == "." || lastc2 == ". " ) {
+            }
+            else if (linl > colmin && linl < colmax ) {
+                salto = true;
+            }
+            if (salto) {
+                contenido2 += linea + " " ;
+            }
+            else {
+                contenido2 += linea + "\n" ;
+            }
+            linea = "";
+        }
+    }
+
+    mostrarContenidob(contenido2);
+    var contenidoBlob2 = new Blob([contenido2], { type: 'text/plain' });
+    ficheroTxt.download = 'download.txt';
+    ficheroTxt.href = window.URL.createObjectURL(contenidoBlob2);
+    ficheroTxt.click();
+
+}
+
+/*
+.
+.
+.
+.
+.
+*/
+
+
+
+
+
+/*
+. leo el archivo, y lo pongo en un objego oculto
+*/
+function leerArchivo(e) {
+    var archivo = e.target.files[0];
+    if (!archivo) {
+        return;
+    }
+    var lector = new FileReader();
+    lector.onload = function(e) {
+        var contenido = e.target.result;
+        mostrarContenido(contenido);
+        mostrarContenidoa(contenido);
+    };
+    lector.readAsText(archivo);
+}
+
+function mostrarContenido(contenido) {
+    var elemento = document.getElementById('contenido-archivo');
+    elemento.innerHTML = contenido;
+}
+
+/*
+. esta funcion es para mostrar solo las 30 primeras lineas
+*/
+function mostrarContenidoa(contenido) {
+    var elemento = document.getElementById('contenido-archivoa');
+    var cont=1;
+    var contenido2 = "";
+    var linea = "";
+    for (let i = 0, n = contenido.length; i < n; ++i) {
+        var charFich = contenido.substring(i,i+1);
+        if ( charFich !="\n") {
+            linea += charFich;
+        }
+        else {
+            cont++;
+            if (cont<30){
+                contenido2 += linea + "\n" ;
+            linea = "";
+            }
+        }
+    }
+    elemento.innerHTML = contenido2;
+}
+
+/*
+. esta funcion es para mostrar solo las 10 primeras lineas
+*/
+function mostrarContenidob(contenido) {
+    var elemento = document.getElementById('contenido-archivob');
+    var cont=1;
+    var contenido2 = "";
+    var linea = "";
+    for (let i = 0, n = contenido.length; i < n; ++i) {
+        var charFich = contenido.substring(i,i+1);
+        if ( charFich !="\n") {
+            linea += charFich;
+        }
+        else {
+            cont++;
+            if (cont<10){
+                contenido2 += linea + "\n" ;
+            linea = "";
+            }
+        }
+    }
+    elemento.innerHTML = contenido2;
+}
+
+document.getElementById('file-input')
+    .addEventListener('change', leerArchivo, false);
+
+
+
+
+
+/*
+.
+.
+.
+.
+.
+*/
+
+</script>
