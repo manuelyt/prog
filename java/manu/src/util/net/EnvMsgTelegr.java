@@ -1,10 +1,10 @@
 package util.net;
 
-import java.io.BufferedInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 
 /*
 
@@ -23,32 +23,33 @@ que se llama chatid, que al entrar, ya te dice tu id
 con eso y las 4 lineas de codigo de abajo se puede enviar lo que se
 quiera a ese bot de telegram, facil, rapido y funciona
 
+este es el json que devuelve :
+
+{"ok":true,"result":{"message_id":5,"from":{"id":5064856467,"is_bot":true,"first_name":"botmanu22","username":"manu4916bot"},"chat":{"id":293596589,"first_name":"manu","username":"manuelytt","type":"private"},"date":1641172630,"text":"xxxx23"}}
+
  */
 
 public class EnvMsgTelegr {
 
-
     public static void main(String[] args) {
-
-
-        System.out.println(" xxxx ");
-
-
+        String line = "";
         String urlString = "https://api.telegram.org/bot%s/sendMessage?chat_id=%s&text=%s";
         String apiToken = "5064856467:AAHmTjEOZa63Axidr6ZGGYxtXumkDXG4H6U";
         String chatId = "293596589";
-        String text = "Hello world!";
-
+        String text = "xxxx23";
         urlString = String.format(urlString, apiToken, chatId, text);
-
         try {
             URL url = new URL(urlString);
             URLConnection conn = url.openConnection();
             InputStream is = new BufferedInputStream(conn.getInputStream());
+
+            BufferedReader reader = new BufferedReader(new InputStreamReader(is));
+            while ((line = reader.readLine()) != null) {
+                    System.out.print(line);
+            }
         } catch (IOException e) {
             e.printStackTrace();
         }
-
     }
 
 }
