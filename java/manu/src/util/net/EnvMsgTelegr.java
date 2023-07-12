@@ -8,24 +8,24 @@ import java.nio.charset.StandardCharsets;
 
 /*
 
-aqui venia como enviar mensajes al telegram
+    aqui venia como enviar mensajes al telegram :
 
-https://dds861.medium.com/sending-message-to-telegram-group-channel-using-bot-from-android-or-java-apps-3c68ffe04a46
+    https://dds861.medium.com/sending-message-to-telegram-group-channel-using-bot-from-android-or-java-apps-3c68ffe04a46
 
-hay que crear un bot, se puede hacer usando el bot botfather, pide que
-le des un nombre, y un usuario
-yo le puse botmanu22, usuario manu4916bot ( parece que en el nombre
-se puede poner cualquier cosa, pero en el usuario no )
+    hay que crear un bot, se puede hacer usando el bot botfather, pide que
+    le des un nombre, y un usuario
+    yo le puse botmanu22, usuario manu4916bot ( parece que en el nombre
+    se puede poner cualquier cosa, pero en el usuario no )
 
-despues hay que averiguar el chatid de tu telefono, hay un bot
-que se llama chatid, que al entrar, ya te dice tu id
+    despues hay que averiguar el chatid de tu telefono, hay un bot
+    que se llama chatid, que al entrar, ya te dice tu id
 
-con eso y las 4 lineas de codigo de abajo se puede enviar lo que se
-quiera a ese bot de telegram, facil, rapido y funciona
+    con eso y las 4 lineas de codigo de abajo se puede enviar lo que se
+    quiera a ese bot de telegram, facil, rapido y funciona
 
-este es el json que devuelve :
+    este es el json que devuelve :
 
-{"ok":true,"result":{"message_id":5,"from":{"id":5064856467,"is_bot":true,"first_name":"botmanu22","username":"manu4916bot"},"chat":{"id":293596589,"first_name":"manu","username":"manuelytt","type":"private"},"date":1641172630,"text":"xxxx23"}}
+    {"ok":true,"result":{"message_id":5,"from":{"id":5064856467,"is_bot":true,"first_name":"botmanu22","username":"manu4916bot"},"chat":{"id":293596589,"first_name":"manu","username":"manuelytt","type":"private"},"date":1641172630,"text":"xxxx23"}}
 
  */
 
