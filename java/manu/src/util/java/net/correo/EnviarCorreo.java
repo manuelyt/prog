@@ -43,6 +43,8 @@ public class EnviarCorreo {
 
     public static void main(String... args) {
         try {
+//            new EmailService("smtp.gmail.com", 465, "paco.abab@gmail.com", "_aA32145678")
+//                    .sendMail();
 //            new EmailService("mdm.correo.gob.es", 25, "buzon.bodeco.des@correo.gob.es", "bodeco2021")
 //                    .sendMail();
 //            new EmailService("smtp.mailtrap.io", 25, "87ba3d9555fae8", "91cb4379af43ed")
