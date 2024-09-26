@@ -1,6 +1,5 @@
 package util.java.object;
 
-import bb.Class2;
 
 public class Class1 {
 
