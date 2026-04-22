@@ -49,7 +49,7 @@ public class QuitarSaltoLinea {
                     chars2 = linea.substring(longi - 1, longi);
                 }
                 if (chars2.equals(".") || chars.equals(". ")) {
-                } else if (longi > 50 & longi < 90)
+                } else if (longi > 70 & longi < 120)
                     salto = true;
                 if (salto)
                     pw.print(linea + " ");
