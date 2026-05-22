@@ -30,6 +30,8 @@ public class QuitarSaltoLinea {
     public static void main(String[] args) {
         String nficheror1 = "c:\\manu\\00basura\\1.txt";
         String nficheror2 = "c:\\manu\\00basura\\2.txt";
+        int long1 = 50;
+        int long2 = 120;
         String linea = "", chars = "", chars2 = "";
         boolean salto = false;
         BufferedReader br = null;
@@ -49,7 +51,7 @@ public class QuitarSaltoLinea {
                     chars2 = linea.substring(longi - 1, longi);
                 }
                 if (chars2.equals(".") || chars.equals(". ")) {
-                } else if (longi > 70 & longi < 120)
+                } else if (longi > long1 & longi < long2)
                     salto = true;
                 if (salto)
                     pw.print(linea + " ");
