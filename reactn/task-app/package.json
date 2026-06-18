@@ -19,7 +19,7 @@
     "expo-constants": "~5.0.1",
     "expo-font": "~5.0.1",
     "expo-web-browser": "^5.0.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "mongodb-stitch-react-native-sdk": "^4.4.0",
     "react": "16.8.3",
     "react-dom": "^16.8.6",
