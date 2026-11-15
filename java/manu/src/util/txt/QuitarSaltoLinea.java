@@ -30,7 +30,7 @@ public class QuitarSaltoLinea {
     public static void main(String[] args) {
         String nficheror1 = "c:\\manu\\00basura\\1.txt";
         String nficheror2 = "c:\\manu\\00basura\\2.txt";
-        int long1 = 50;
+        int long1 = 60;
         int long2 = 120;
         String linea = "", chars = "", chars2 = "";
         boolean salto = false;
